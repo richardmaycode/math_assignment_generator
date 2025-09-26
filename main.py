@@ -2,10 +2,11 @@
 
 Ensure the program can handle common errors like the user inputting incorrect values.
 """
+import random
 
 print("Welcome to MPG!")
 
-problem_types = input("What type of problems do you want to generate? (add|sub|mult|div): ")
+problem_types = input("What type of problems do you want to generate? (add|sub|mult|div): ").split("|")
 num_problems = int(input("How many problems should be created?: "))
 
 print(f"Generating problems types {problem_types}...")
@@ -14,16 +15,18 @@ print(f"Generating {num_problems} problems...")
 for i in range(0, num_problems):
   print(f"Creating problem {i+1}...")
   
-  if "add" in problem_types:
+  problem_type = random.choice(problem_types)
+  
+  if "add" == problem_type:
     print("->addition problem")
     
-  if "sub" in problem_types:
+  if "sub" == problem_type:
     print("->subtraction problem")
     
-  if "mult" in problem_types:
+  if "mult" == problem_type:
     print("->multiplication problem")
     
-  if "div" in problem_types:
+  if "div" == problem_type:
     print("->division problem")
 
 print("Complete!")
