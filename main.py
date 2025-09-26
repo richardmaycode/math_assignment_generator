@@ -2,3 +2,12 @@
 
 Ensure the program can handle common errors like the user inputting incorrect values.
 """
+
+print("Welcome to MPG!")
+
+problem_types = input("What type of problems do you want to generate? (add|sub|mult|div): ")
+num_problems = int(input("How many problems should be created?: "))
+
+print(f"Generating problems types {problem_types}...")
+print(f"Generating {num_problems} problems...")
+print("Complete!")
