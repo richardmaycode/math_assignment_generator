@@ -10,4 +10,15 @@ num_problems = int(input("How many problems should be created?: "))
 
 print(f"Generating problems types {problem_types}...")
 print(f"Generating {num_problems} problems...")
+
+if num_problems == 1:
+  print("Creating problem 1...")
+
+elif num_problems == 2:
+  print("Creating problem 1...")
+  print("Creating problem 2...")
+
+else:
+  print("too many problems requested...")
+
 print("Complete!")
