@@ -26,7 +26,9 @@ for i in range(0, num_problems):
     print(f"{max(num_1, num_2)} - {min(num_1, num_2)} = ______")
     
   if "mult" == problem_type:
-    print("->multiplication problem")
+    num_1 = random.randint(2, 10)
+    num_2 = random.randint(2, 10)
+    print(f"{max(num_1, num_2)} * {min(num_1, num_2)} = ______")
     
   if "div" == problem_type:
     print("->division problem")
