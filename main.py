@@ -31,6 +31,9 @@ for i in range(0, num_problems):
     print(f"{max(num_1, num_2)} * {min(num_1, num_2)} = ______")
     
   if "div" == problem_type:
-    print("->division problem")
+    num_1 = random.randint(2, 10)
+    num_2 = random.randint(2, 10)
+    multiplication_result = num_1 * num_2
+    print(f"{multiplication_result} / {min(num_1, num_2)} = ______")
 
 print("Complete!")
