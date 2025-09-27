@@ -18,7 +18,7 @@ for i in range(0, num_problems):
   problem_type = random.choice(problem_types)
   
   if "add" == problem_type:
-    print("->addition problem")
+    print(f"{random.randint(1, 100)} + {random.randint(1, 100)} = ______")
     
   if "sub" == problem_type:
     print("->subtraction problem")
