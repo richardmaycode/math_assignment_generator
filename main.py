@@ -21,7 +21,9 @@ for i in range(0, num_problems):
     print(f"{random.randint(1, 100)} + {random.randint(1, 100)} = ______")
     
   if "sub" == problem_type:
-    print("->subtraction problem")
+    num_1 = random.randint(1, 100)
+    num_2 = random.randint(1, 100)
+    print(f"{max(num_1, num_2)} - {min(num_1, num_2)} = ______")
     
   if "mult" == problem_type:
     print("->multiplication problem")
